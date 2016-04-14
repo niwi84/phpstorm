@@ -6,6 +6,24 @@
  * Time: 17:20
  */
 
+//////////////////-version finale-///////////////////
+
+$tab = array(
+    "Emmanuel" => 42,
+    "Thierry" => 51,
+    "Pascal" => 45,
+    "Eric" => 48,
+    "Nicolas" => 19
+);
+
+foreach($tab as $cle => $element) {
+    echo $cle.' est &acirc;g&eacute; de '.$element.' ans.<br>';
+}
+
+$ageMoyen = array_sum($tab) / count($tab);
+echo '<br>La moyenne d\'&acirc;ge est de ' . $ageMoyen . ' ans.';
+
+
 //"Emmanuel"  => 42,
 //"Thierry"   => 51,
 //"Pascal"    => 45,
@@ -82,22 +100,5 @@ for ($row = 0; $row < 5; $row++) {
 }
 echo "</table>";
 */
-
-//////////////////-test5-///////////////////
-
-$tab = array(
-    "Emmanuel" => 42,
-    "Thierry" => 51,
-    "Pascal" => 45,
-    "Eric" => 48,
-    "Nicolas" => 19
-);
-
-foreach($tab as $cle => $element) {
-    echo $cle.' est &acirc;g&eacute; de '.$element.' ans.<br>';
-}
-
-$ageMoyen = array_sum($tab) / count($tab);
-echo '<br>La moyenne d\'&acirc;ge est de ' . $ageMoyen . ' ans.';
 
 ?>
